@@ -15,7 +15,6 @@ void alternate_swap(int arr[], int n){
 			swap(arr[i], arr[i+1]); // swapping
 			}
 		}
-		return 0;
 }
 
 int main(){

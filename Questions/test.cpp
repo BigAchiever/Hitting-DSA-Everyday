@@ -1,12 +1,8 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
-	for(int i =0; i<=15;i++){
-		// cout<<i<<" "<<endl;
-		cout<<(i&3)<<endl;;
-		// if(i&1){
-		// 	continue;
-		// }
-		// i++;
-	}
+	int arr[] = {1, 2, 3, 4, 5};
+	int sizee = arr.size();
+	cout<<sizee;
+	return 0;
 }
