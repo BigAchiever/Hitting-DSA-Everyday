@@ -17,7 +17,7 @@ int n, key;
 cin>>n;
 
 int arr[20];
-	for(int i =1;i <= n;i++){
+	for(int i =0;i < n;i++){
  	// Taking input from the array
 		cin>>arr[i];
 }
