@@ -1,6 +1,11 @@
-#include <bits/stdc++.h> 
+#include <iostream>
+using namespace std;
 
-int FirstOccurrence(vector<int>& arr, int n, int key){
+/* To find total number of occurrences 
+I converted vector to an array and then I just wrote the main function.
+*/
+
+int FirstOccurrence(int arr[], int n, int key){
  // Write your code here
     //  Code for first occurrence
     int start = 0, ans = -1;
@@ -25,7 +30,7 @@ int FirstOccurrence(vector<int>& arr, int n, int key){
     return ans;
 }
 
-int LastOccurrence(vector<int>& arr, int n, int key){
+int LastOccurrence(int arr[], int n, int key){
  // Write your code here
     //  Code for first occurrence
     int start = 0, ans = -1;
@@ -42,19 +47,31 @@ int LastOccurrence(vector<int>& arr, int n, int key){
             start = mid + 1;
         }
         else if(key < arr[mid]){  // left mey jao  
-            end = mid - 1;
+             end = mid - 1;
         }
         mid = start + (end-start)/2;
     }
     return ans;
 }
 
-pair<int, int> firstAndLastPosition(vector<int>& arr, int n, int k)
+// void totalOccurrence(){
+
+// }
+int main()
 {
-       pair<int, int>p;
-       p.first = FirstOccurrence(arr, n, k);
-       p.second = LastOccurrence(arr, n, k);
-    
-    return p;
-    
-} 
+	int n;
+    cin>>n;
+    int arr[7]={1,2,3,12,12,12,12};
+    cout << "First occurance index is " << FirstOccurrence(arr, n, 12) << endl;
+    cout << "last occurance index is " << LastOccurrence(arr, n, 12) << endl;
+    	
+        int m,q;
+        m = LastOccurrence(arr,n,12);
+        q = FirstOccurrence(arr,n,12);
+
+
+        int total_occurrence = (m-q) + 1;
+        cout << endl;
+        cout << "total number of occurrences "<< total_occurrence << endl;
+    return 0;
+}
