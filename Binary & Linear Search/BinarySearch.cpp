@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+//https://leetcode.com/problems/binary-search/solutions/423162/binary-search-101/
+
 int binary_search(int arr[], int n, int key){
 	int start = 0;
 	int end = n-1;
@@ -12,7 +14,7 @@ int binary_search(int arr[], int n, int key){
 	int mid = start + (end-start)/2;
 
 	while(start <= end){
-		if(mid[arr] == key){
+		if(arr[mid] == key){
 			return mid;
 		}
 

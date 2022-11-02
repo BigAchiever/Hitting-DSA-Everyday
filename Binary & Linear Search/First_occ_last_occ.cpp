@@ -12,7 +12,7 @@ int FirstOccurrence(vector<int>& arr, int n, int key){
         if(arr[mid]==key){
 // We are storing the ans and kept moving to the mentioned side till the time ans != mid
             ans = mid;
-            end = mid - 1; // finding the occurence from moving toward left
+            end = mid - 1; // finding the first occurence from moving toward left
         }
         else if(key > arr[mid]){  // right mein jao
             start = mid + 1;
