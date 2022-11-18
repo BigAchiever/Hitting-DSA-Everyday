@@ -29,10 +29,11 @@ int findpivotWithDuplicates(vector<int>& arr){
 
     while(start <= end){
         // 4 cases over here
-        if(mid < end && arr[mid] > [mid+1])// mid < end so it does not get out of bound
-            return mid;
+        if(mid < end && arr[mid] > arr[mid+1]){
+            return mid;                         // mid < end so it does not get out of bound
+        }
         if(mid > start &&  arr[mid]< arr[mid-1]){
-            return mid-1
+            return mid-1;
         }
 
         // IF elements at middle,start, end are equal then
@@ -61,6 +62,7 @@ int findpivotWithDuplicates(vector<int>& arr){
 
     }
 }
+
 
 int main(){
     int arr[8] = {4, 5, 6, 7, 8, 1, 2};
