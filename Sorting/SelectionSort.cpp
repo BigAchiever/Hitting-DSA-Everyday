@@ -1,25 +1,22 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Sorting it using min elements
+
 void SelectionSort(int arr[],int size){
-  for(int i=0;i<size-1;i++){ // 0 to n-1/n-i (n-i) is more better
-    int minIndex=i; //taking the min index and comparing it with the next element
-    for(int j=i+1;j<size;j++){
-
-    // One by one move boundary of
-    // unsorted subarray
-	    if(arr[j]<arr[minIndex]){
-	   		minIndex = j;
-	    }
-
-      // Swap the found minimum element
-        // with the first element
-	    if(minIndex!=i){
-	        swap(arr[minIndex], arr[i]);
-	    }
-      
+	for(int i = 0; i < n-1; i++ ) {
+        int minIndex = i; // storing the 0 index ele here
+        
+        for(int j = i+1; j<n; j++) {
+            
+            if(arr[j] < arr[minIndex]) // checking to find the min index
+                minIndex = j; // storing the ele and checkin till weget min ele
+            
+        }
+        if(minIndex != i){ // checking if they are not equal
+        swap(arr[minIndex], arr[i]);
+        }
     }
-  }
 }
 
 
