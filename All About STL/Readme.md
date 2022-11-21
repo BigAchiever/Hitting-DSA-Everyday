@@ -1,1 +1,1 @@
-<img align ="Center" alt="Coding" width="600" src ="https://courses.e-ce.uth.gr/ECE326/lib/exe/fetch.php?w=800&tok=915d4d&media=cpp:stl:stl.png">
+<img align ="Center" alt="Coding" width="1000" src ="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200219122316/Adaptive-and-Unordered-Containers-in-C-STL-768x455.png">
