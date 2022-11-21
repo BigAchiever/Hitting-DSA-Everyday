@@ -19,7 +19,7 @@ void InsertionSort(int arr[],int size){
 
 int main(){
 	int n =5;
-	int arr[n] = {1, 2, -1, 6, 3};
+	int arr[5] = {1, 2, -1, 6, 3};
 
 	InsertionSort(arr,n);
 	for(int i=0;i<n;i++){

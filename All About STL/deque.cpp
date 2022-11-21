@@ -32,6 +32,7 @@ int main()
     cout << "\ndeq1.at(2) : " << deq1.at(2);
     cout << "\ndeq1.front() : " << deq1.front();
     cout << "\ndeq1.back() : " << deq1.back();
+    cout<<"\nSize : "<<deq1.size();
 
     cout << "\ndeq1.pop_front() : ";
     deq1.pop_front();
@@ -41,7 +42,15 @@ int main()
     deq1.pop_back();
     show(deq1);
 
-    cout<<"Checking element: "<<deq1.at(1)<<endl;
+    cout<<"Checking element: "<<deq1.at(0)<<endl;
+
+
+    deq1.erase(deq1.begin(), deq1.begin()+1);
+    cout<<"Size after erasing: "<<deq1.size()<<endl;
+    for(int i:deq1){
+        cout<<"Elements"<<i<<endl;
+    }
+
 
     return 0;
 }
