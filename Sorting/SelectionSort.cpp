@@ -16,7 +16,7 @@ void SelectionSort(int arr[], int n)
                 minIndex = j;           // storing the ele and checkin till weget min ele
         }
         if (minIndex != i)
-        { // checking if they are not equal
+        // { // checking if they are not equal
             swap(arr[minIndex], arr[i]);
         }
     }

@@ -2,6 +2,7 @@
 #include <deque>
 #include <iostream>
 
+// https://cplusplus.com/reference/deque/deque/
 // A deque according to me is a container which can perform operations from front and back both and faster.
 // A deque is similar to vector but a deque does not store memory in contiguous memory blocks like vector.
 // Insertion and deletion can be done form both front and rare
